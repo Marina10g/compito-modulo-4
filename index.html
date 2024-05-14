@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>il mio e-commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo Negozio" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prodotti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatti</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- link al Backoffice nella navbar di index.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My E-Commerce</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="backoffice.html">Backoffice</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+
+    <!--Hero Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="jumbotron">
+                    <h1 class="display-4">Benvenuti nel nostro Shop!</h1>
+                    <p class="lead">Scopri le nostre offerte esclusive.</p>
+                    <hr class="my-4">
+                    <p>Più informazioni sulle ultime novità.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Product Section -->
+<div class="row">
+    <div class="col-md-3">
+    <div class="card product" data-id="1"> 
+      <img src="Img/BLOCCHI APPUNTI.jpg" class="card-img-top" alt="Product Name">
+      <div class="card-body">
+        <h5 class="card-title">Blocchi appunti </h5>
+        <p class="card-text">Blocchi a punto metallico Blasetti Bristol </p>
+        <a href="#" class="btn btn-primary">Vedi più dettagli</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card product" data-id="2"> 
+      <img src="Img/COLORI A TEMPERA.jpg" class="card-img-top" alt="Product Name">
+      <div class="card-body">
+        <h5 class="card-title">Colori a tempera</h5>
+        <p class="card-text">Tempera pronta 1 litro vari colori</p>
+        <a href="#" class="btn btn-primary">Vedi più dettagli</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card product" data-id="3"> 
+      <img src="Img/FOGLI PROTOCOLLO.jpg" class="card-img-top" alt="Product Name">
+      <div class="card-body">
+        <h5 class="card-title">Fogli protocollo</h5>
+        <p class="card-text">Fogli protocollo Blasetti 1292</p>
+        <a href="#" class="btn btn-primary">Vedi più dettagli</a>
+      </div>
+    </div>
+  </div> 
+  <div class="col-md-3">
+    <div class="card product" data-id="4"> 
+      <img src="Img/PASTELLI A CERA.jpg" class="card-img-top" alt="Product Name">
+      <div class="card-body">
+        <h5 class="card-title">Pastelli a cera</h5>
+        <p class="card-text">Pastelli a cera Giotto </p>
+        <a href="#" class="btn btn-primary">Vedi più dettagli</a>
+      </div>
+    </div>
+  </div> 
+  <div class="col-md-3">
+    <div class="card product" data-id="5"> 
+      <img src="Img/PENNA A SFERA NERA.jpg" class="card-img-top" alt="Product Name">
+      <div class="card-body">
+        <h5 class="card-title">Penna a sfera nera</h5>
+        <p class="card-text">Penna a sfera con cappuccio Bic Cristal nera - tratto 1 mm - fusto trasparente  </p>
+        <a href="#" class="btn btn-primary">Vedi più dettagli</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card product" data-id="6"> 
+      <img src="Img/PENNA A SFERA ROSSA.jpg" class="card-img-top" alt="Product Name">
+      <div class="card-body">
+        <h5 class="card-title">Penna a sfera rossa</h5>
+        <p class="card-text">Penna a sfera con cappuccio Bic Cristal rossa - tratto 1 mm - fusto trasparente  </p>
+        <a href="#" class="btn btn-primary">Vedi più dettagli</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card product" data-id="7"> 
+      <img src="Img/PENNA BLU CANCELLABILE.jpg" class="card-img-top" alt="Product Name">
+      <div class="card-body">
+        <h5 class="card-title">Penna cancellabile</h5>
+        <p class="card-text">Penna cancellabile Pilot Frixion Ball  blu </p>
+        <a href="#" class="btn btn-primary">Vedi più dettagli</a>
+      </div>
+    </div>
+  </div><div class="col-md-3">
+    <div class="card product" data-id="8"> 
+      <img src="Img/PENNA ROSSA CANCELLABILE.jpg" class="card-img-top" alt="Product Name">
+      <div class="card-body">
+        <h5 class="card-title">Penna cancellabile</h5>
+        <p class="card-text">Penna cancellabile Pilot Frixion Ball rossa </p>
+        <a href="#" class="btn btn-primary">Vedi più dettagli</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2024 NomeNegozio - Tutti i diritti riservati
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
