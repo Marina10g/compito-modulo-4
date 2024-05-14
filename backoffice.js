@@ -2,7 +2,7 @@ document.getElementById('addProductForm').addEventListener('submit', addProduct)
 
 // Funzione per recuperare i prodotti dal server
 function fetchProducts() {
-fetch("https://striveschool-api.herokuapp.com/api/put-your-endpoint-here/", {
+fetch("https://striveschool-api.herokuapp.com/api/product/", {
 headers: {
 "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQyM2Y3MTU1NjIxYTAwMTVjMTVmNmMiLCJpYXQiOjE3MTU2MTc2NDksImV4cCI6MTcxNjgyNzI0OX0.fBzT8vOvLlssA-j-PVhoOgFDkiuz-uaLm6FiG8H7h1k"
 }
@@ -38,7 +38,7 @@ function displayProductList(products) {
 function addProduct(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
-    fetch("https://striveschool-api.herokuapp.com/api/put-your-endpoint-here/", {
+    fetch("https://striveschool-api.herokuapp.com/api/product/", {
         method: 'POST',
         body: formData,
        headers: {
@@ -63,7 +63,7 @@ function editProduct(productId) {
         imageUrl: "http://example.com/new-image.jpg"
     };
 
-    fetch(`https://striveschool-api.herokuapp.com/api/put-your-endpoint-here/${productId}`, {
+    fetch(`https://striveschool-api.herokuapp.com/api/product/${productId}`, {
         method: 'PUT',
         headers: {
             'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQyM2Y3MTU1NjIxYTAwMTVjMTVmNmMiLCJpYXQiOjE3MTU2MTc2NDksImV4cCI6MTcxNjgyNzI0OX0.fBzT8vOvLlssA-j-PVhoOgFDkiuz-uaLm6FiG8H7h1k', 
@@ -82,7 +82,7 @@ function editProduct(productId) {
 
 // Funzione per gestire l'eliminazione di un prodotto
 function deleteProduct(productId) {
-    fetch(`https://striveschool-api.herokuapp.com/api/put-your-endpoint-here/${productId}`, {
+    fetch(`https://striveschool-api.herokuapp.com/api/product/${productId}`, {
         method: 'DELETE',
         headers: {
             'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQyM2Y3MTU1NjIxYTAwMTVjMTVmNmMiLCJpYXQiOjE3MTU2MTc2NDksImV4cCI6MTcxNjgyNzI0OX0.fBzT8vOvLlssA-j-PVhoOgFDkiuz-uaLm6FiG8H7h1k ' 
